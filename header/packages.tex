@@ -1,0 +1,54 @@
+\documentclass
+[	
+	pdftex,	 	
+	paper				= a4,
+	toc					= listof,			% Abbildungs- und Tabellenverzeichnis zum Inhaltsverzeichnis
+	toc					= bib,				% Literaturverzeichnis zum Inhaltsverzeichnis 
+	titlepage			= true,	 			% Titel wird in der "titlepage" Umgebung gesetzt
+	numbers 				= noendperiod, 		% "letzter" Punkt hinter Nummerierungen wird entfernt
+	draft 				= false,			
+	twoside 				= false,	 			% Seitenränder werden an zweiseitig angepasst		 
+	headinclude			= true,				% Einstellung, ob der Kopf zum Textkörper gerechnet werden sollen	 
+	footinclude			= false,				% Einstellung, ob der Fuß zum Textkörper gerechnet werden sollen	 
+]
+{scrreprt}
+
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{ngerman}
+
+\usepackage{graphicx}
+\graphicspath{{images/}} 	% Dort liegen die Bilder der Arbeit
+
+\usepackage{abstract}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+
+\usepackage[utf8]{inputenc}	
+
+\usepackage{framed}
+
+\usepackage[usenames, dvipsnames]{color}
+
+\usepackage{listings}
+
+\usepackage{microtype}
+
+\usepackage{scrpage2}  
+
+\usepackage[all]{xy}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\usepackage{acronym}
+
+\usepackage{rotating}
+
+\usepackage{caption}
+
+\usepackage{hyperref}
+
+\usepackage[all]{hypcap}

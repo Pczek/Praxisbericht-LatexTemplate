@@ -1,0 +1,89 @@
+\thispagestyle{empty}
+
+\begin{titlepage}{	
+	\begin{framed}{
+		\setlength{\parindent}{0,3cm} {\hspace{-0.3cm}\studiengang}
+		\hspace{2.6cm}	
+		\vspace{-0.5cm}
+		\includegraphics[height = 2.5cm]{frontpage/DHBW_Logo.pdf}
+					
+		%-- horizontale Linie --
+		\setlength{\unitlength}{1cm}
+		
+		\begin{picture}(16,1)
+			\put(-0.63,0.5){\line(1,0){14.7}}
+		\end{picture}
+	
+	
+		\parbox{13.5cm}{
+			\begin{center}
+			
+				%-- Titel der Arbeit --
+				\vspace{0.25cm} 
+				\large{\bf \titel}
+				\vspace{0.8cm}
+														
+				%-- Praxisphasen --
+				\normalsize{\praxisA}
+				\vspace{0.8cm}
+								
+				%-- Themen --
+				\large{\bf \themaA}
+				\vspace{0.45cm}
+								
+				%\large{\bf \themaB}
+				%\vspace{0.7cm}
+		
+				%-- Autor --
+				\normalsize von
+				\vspace{0.4cm}
+				\Large{\autor}
+				\vspace{0.55cm}
+								
+				%-- Matrikelnummer --
+				\normalsize{\matrikelnr}
+				\vspace{0.15cm}
+														
+				%-- Jahrgang --
+				\normalsize{\jahrgang}
+				\vspace{2cm}
+																					
+			\end{center}
+		}
+
+		%-- Fuß --	
+		\setlength{\unitlength}{1cm}
+				
+		\begin{picture}(16,0.9)
+		\put(-0.63,0.5){\line(1,0){14.7}}
+		\end{picture}	
+		\makebox{
+			\hspace{-0.5cm}
+			\vspace{-0.3cm}	
+					
+			\parbox{2cm}{
+				\includegraphics[height = 2.3cm]{frontpage/Logo_DLR.pdf}
+			}
+									
+			\hspace{0.9cm}
+											
+			\parbox{5cm}{	
+				\small{
+					\dlr\\\\
+					Standort: \standort
+				}			
+			}
+					
+			\hspace{0.1cm}
+										
+			\parbox{5,5cm}{								
+				\small{
+					\institut\\
+					\abteilung\\\\
+					\betreuer
+				}			
+			}
+		}
+		
+	}\end{framed}
+}\end{titlepage}

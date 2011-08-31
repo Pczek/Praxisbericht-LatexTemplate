@@ -1,0 +1,11 @@
+NI-DAQmx Device Driver               9.2.1f2
+NI-DAQmx ADE Support                 9.2.1
+NI-DAQmx MAX Configuration           9.2.1
+LabVIEW                              10.0.0
+     Database Connectivity Toolkit   10.0.0
+     MathScript RT Module            10.0.0
+     Statechart Module               10.0
+     Unit Test Framework Toolkit     10.0.0
+     VI Analyzer Toolkit             10.0.0
+LabVIEW Run-Time 2010                10.0.0
+Measurement & Automation Explorer    4.7.1f8

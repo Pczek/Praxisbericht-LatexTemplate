@@ -1,0 +1,55 @@
+% Header Setup
+\input{header/macros}
+\input{header/packages}
+\input{header/preferences}
+
+%Document Begin
+\begin{document}
+
+
+%----------------------------------
+%-- Setup of the Essential Parts --
+%----------------------------------
+\pagenumbering{Roman} %Start Roman Numbering for Essentials
+\include{essentials/frontpage}
+
+\KOMAoptions{DIV = 10} %Bedruckbarer Bereich		
+%\KOMAoptions{BCOR = 1cm}					% Bindekorrekturrand festlegen
+
+\include{essentials/declaration} 
+
+\tableofcontents \clearpage
+\listoffigures \clearpage
+\listoftables \clearpage
+\include{essentials/acronym}
+
+%------------
+%-- Part 1 --
+%------------
+\pagenumbering{arabic} 
+\part{Title Part 1} % (fold)
+\label{prt:1}
+
+%\include all Files for Part 1 here
+%\include{part1/introduction}
+
+
+%-----------------------------
+%-- Appendix & Bibliography --
+%-----------------------------
+
+\pagenumbering{Roman} 
+\setcounter{page}{9} %Set Page Number for continues Roman Page Numbers
+
+%-- Anhang --
+\appendix 
+\chapter{\appendixname}
+\input{appendix/app1} 
+\clearpage
+
+%-- Literaturverzeichnis --
+
+\bibliography{bib/bibliography} % Literatur-Datei *.bib einfügen -> Am besten mit Bibdesk erstellen!
+\bibliographystyle{unsrtdin}
+
+\end{document}

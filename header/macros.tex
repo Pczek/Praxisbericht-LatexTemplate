@@ -1,0 +1,86 @@
+%-------------------------------------
+%-- Informationen für das Deckblatt --
+%-------------------------------------
+\newcommand{\studiengang}{\Large\sf Studiengang Informationstechnik}
+
+\newcommand{\titel}{Bericht zum Modul Praxis I}
+
+\newcommand{\praxisA}{Praxisphase 1: 10. Januar 2011 - 25. März 2011\\}
+
+
+\newcommand{\themaA}{Thema 1:}														
+% \newcommand{\themaB}{Thema 2: }
+
+\newcommand{\autor}{\bf Willy Wiener}
+\newcommand{\matrikelnr}{\it - Matrikelnr.: 12345678 -}
+\newcommand{\jahrgang}{\it - Kurs: TITXXZ -}
+
+\newcommand{\dlr}{Deutsches Zentrum für\\ Luft- und Raumfahrt e.V.\\ in der Helmholtz-Gemeinschaft}
+\newcommand{\standort}{Göttingen}
+
+\newcommand{\institut}{Institut für Aerodynamik und Strömungstechnik}
+\newcommand{\abteilung}{Abteilung: Raumfahrzeuge}
+\newcommand{\betreuer}{Foo Bar}
+
+%----------------------------------
+%-- Vordefinierte Formatierungen --
+%----------------------------------
+\newcommand{\equname}{Gleichung}						% \equname		-> Gleichung
+
+% Darstellung von Gleichungen, welche unformatiert (nicht zentriert und ohne Nummerierung) ausgegeben werden:
+\newcommand{\EQ}[1]
+{ 
+	\ensuremath{#1}
+}
+
+%---------------------------------------------------------
+
+% Darstellung von Abbildungenen mit...
+
+\newcommand{\FG}[4]
+{ 
+	\vspace{2mm}
+	 
+	\begin{figure}[!htb]
+	
+		\centering
+		
+			\includegraphics[height = #2]{#1} 	
+			\caption{#3}
+			\label{pic:#4}
+			 
+	\end{figure}
+}
+
+% ... und Referenz
+\newcommand{\FR}[1]{\figurename~\ref{pic:#1}}
+%-------------------------------------------------------
+
+% Darstellung von Tabellen mit...
+
+\newcommand{\TB}[4]
+{ 
+	\vspace{2mm}
+	 
+	\begin{table}[#1]
+	
+		\centering
+	
+			\input{#2} 			 
+	
+		\caption{#3}
+		\label{tab:#4}
+		
+	\end{table}
+}
+
+% ... und Referenz
+\newcommand{\TR}[1]{\tablename~\ref{tab:#1}}
+
+
+% ---------Schriftformatierungen------------------ 
+\newcommand{\Name}[1]{\emph{#1}}
+\newcommand{\Fachbegriff}[1]{\textbf{#1}} 
+\newcommand{\Code}[1]{\texttt{#1}}
+\newcommand{\Datei}[1]{\texttt{#1}}
+\newcommand{\Datentyp}[1]{\textsf{#1}}
