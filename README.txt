@@ -1,4 +1,4 @@
-Latex Template von Pczek
+Latex Template von Pczek & Chrizzi
 Special Thanks to Peter Mahns 
 
 Zeichenkodierung UTF-8
