@@ -35,20 +35,39 @@
 
 %---------------------------------------------------------
 
+%format: \setPicture{path}{height in cm}{description}{label for references}
+\newcommand{\setPicture}[4]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=#2cm]{#1}
+		\caption{#3}
+		\label{#4}
+	\end{figure}
+}
+
+%format: \setPictureSourced{path}{height in cm}{description}{label for references}{source}
+\newcommand{\setPictureSourced}[5]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[height=#2cm]{#1}
+		\caption{#3\protect\footnotemark}
+		\label{#4}
+	\end{figure}
+	\footnotetext{Quelle: #5}
+}
+
+%format: \refPicture{label for references}
+\newcommand{\refPicture}[1]{\figurename~\ref{#1}}
+
 % Darstellung von Abbildungenen mit...
 
-\newcommand{\FG}[4]
-{ 
-	\vspace{2mm}
-	 
+\newcommand{\FG}[4]{ 
+	\vspace{2mm} 
 	\begin{figure}[!htb]
-	
 		\centering
-		
-			\includegraphics[height = #2]{#1} 	
-			\caption{#3}
-			\label{pic:#4}
-			 
+		\includegraphics[height = #2]{#1} 	
+		\caption{#3}
+		\label{pic:#4}		 
 	\end{figure}
 }
 
